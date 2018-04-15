@@ -7,7 +7,7 @@ python main.py -from ddmmyyyy -to ddmmyyyy
 Downloads data between the two dates[including from and to]
 
 python main.py 
-Downloads datay for today
+Downloads data for today
 
 python main.py -update
 Downloads latest closing prices data
