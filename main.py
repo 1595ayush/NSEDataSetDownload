@@ -34,7 +34,7 @@ def get_response_for_request(sess, url, date):
     elif response.status_code != 200:
         print("Response status is %s \tCould not download for date %s." % (response.status, date))
     else:
-        print("Downloaded File for date %s", date)
+        print("Downloaded File for date %s" % date)
     return response
 
 
