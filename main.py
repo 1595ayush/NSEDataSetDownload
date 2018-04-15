@@ -30,7 +30,7 @@ def get_response_for_request(sess, url, date):
     if response.status_code == 403:
         print("Response status is %s\tCould not download for date %s." % (response.status, date))
     elif response.status_code == 404:
-        print("File not found\tCould not download %s.", url)
+        print("File not found\tCould not download %s."% url)
     elif response.status_code != 200:
         print("Response status is %s \tCould not download for date %s." % (response.status, date))
     else:
@@ -74,7 +74,6 @@ def write_to_csv(data, date):
     file_name = "nse" + date.strftime('%d%m%Y') + ".csv"
     with open(os.path.join("data", file_name), 'w') as file:
         file.write(data.decode())
-        file.close()
 
 
 def print_usage():
